@@ -1,0 +1,20 @@
+{
+  "instance": {
+    "instanceId": "asp-consumer",
+    "vipAddress": "asp-consumer-service",
+    "hostName": "127.0.0.1",
+    "app": "ASP-CONSUMER-SERVICE",
+    "homePageUrl": "http://127.0.0.1:5000/health",
+    "ipAddr": "127.0.0.1",
+    "dataCenterInfo": {
+      "@class": "com.netflix.appinfo.MyDataCenterInfo",
+      "name": "MyOwn"
+    },
+    "healthCheckUrl": "http://127.0.0.1:5000/health",
+    "port": {
+      "$": 5000,
+      "@enabled": "true"
+    },
+    "statusPageUrl": "http://127.0.0.1:5000/health"
+  }
+}
