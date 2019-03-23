@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace AspConsumer.Jobs
 {
-    public class IHealthCheckTask : IHostedService
+    public class HealthCheckTask : IHostedService
     {
         private ILogger _logger;
 
-        public IHealthCheckTask(ILogger<IHealthCheckTask> logger)
+        public HealthCheckTask(ILogger<HealthCheckTask> logger)
         {
             _logger = logger;
         }

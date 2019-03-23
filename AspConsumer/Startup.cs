@@ -36,7 +36,7 @@ namespace AspConsumer
             services.AddDbContext<HeroContext>(options => options.UseMySql(connectionString));
             services.AddScoped<IHeroService, HeroService>();
             services.AddScoped<IHeroRepository, HeroRepository>();
-            services.AddHostedService<IHealthCheckTask>().AddLogging();
+            services.AddHostedService<HealthCheckTask>().AddLogging();
             services.AddHealthChecks();
         }
 
